@@ -6,7 +6,6 @@ class Waxem < Gosu::Window
   def initialize
     super(WIDTH, HEIGHT)
     self.caption = "Wax'em"
-
   end
 
   def draw
@@ -14,6 +13,9 @@ class Waxem < Gosu::Window
   end
 
   def update
-    
+
   end
 end
+
+window = Waxem.new
+window.show
