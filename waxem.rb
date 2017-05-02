@@ -1,4 +1,5 @@
 require "gosu"
+require_relative "game/objects/player"
 
 class Waxem < Gosu::Window
   WIDTH = 1200
@@ -6,14 +7,15 @@ class Waxem < Gosu::Window
   def initialize
     super(WIDTH, HEIGHT)
     self.caption = "Wax'em"
+    @player = Player.new(200, 200)
   end
 
   def draw
-
+    @player.draw
   end
 
   def update
-
+    @player.update
   end
 end
 
