@@ -7,11 +7,14 @@ class Waxem < Gosu::Window
   def initialize
     super(WIDTH, HEIGHT)
     self.caption = "Wax'em"
-    @player = Player.new(200, 200)
+    @player = Player.new(self, 200, 200)
   end
 
   def draw
     @player.draw
+  end
+
+  def button_down(id)
   end
 
   def update
